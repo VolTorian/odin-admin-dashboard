@@ -62,9 +62,31 @@ body {
 .announcements, .trending {
     display: grid;
     grid-template-rows: 1.5rem;
+    overflow: hidden;
 }
 
 .announcements-grid, .trending-grid {
     background-color: white;
+    padding: 20px;
+    display: grid;
+    overflow: hidden;
+}
+
+.announcement-item {
+    overflow: hidden;
     height: 100%;
+}
+
+.padding-wrapper {
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.padding-wrapper  + .padding-wrapper {
+    border-top: solid 1px gray;
+    padding-top: 20px;
+}
+
+.padding-wrapper:last-child {
+    padding-bottom: 0px;
 }
