@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    font-family: serif;
+    font-size: 1rem;
 }
 
 .container {
@@ -11,6 +13,30 @@ body {
 
 .header {
     background-color: yellow;
+    display: grid;
+    grid-template-rows: 50px;
+    grid-template-columns: 6fr 1fr 1fr 1fr;
+    /* grid-template-rows: 100px 200px; */
+}
+
+.search {
+    /* background-color: blue; */
+    display: flex;
+    height: 100%;
+    /* margin: 20px; */
+    box-sizing: content-box;
+}
+
+img {
+    /* max-height: 50px; */
+}
+
+.search input {
+    font-size: 1rem;
+    font-family: serif;
+    height: 1.7rem;
+    align-self: center;
+    flex-grow: 1;
 }
 
 .sidebar {
