@@ -15,7 +15,7 @@ body {
     background-color: yellow;
     display: grid;
     grid-template-rows: 50px;
-    grid-template-columns: 6fr 1fr 1fr 1fr;
+    grid-template-columns: 6fr 3fr;
     /* grid-template-rows: 100px 200px; */
 }
 
@@ -27,8 +27,21 @@ body {
     box-sizing: content-box;
 }
 
-img {
-    /* max-height: 50px; */
+.profile-nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 2rem;
+    justify-content: right;
+    padding-right: 40px;
+}
+
+.profile-nav img {
+    height: 100%;
+}
+
+.pfp {
+    border-radius: 50%;    
 }
 
 .search input {
