@@ -138,11 +138,28 @@ body {
     padding: 20px 15px 20px 20px;
     border-left: solid 8px green;
     box-sizing: content-box;
+    display: grid;
+    grid-template-rows: 1fr 25px;
+}
+
+.project-info {
+    overflow: hidden;
+}
+
+.project-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: right;
 }
 
 .projects-card:hover {
     padding: 20px 15px 20px 15px;
     border-left: solid 13px gray;
+}
+
+.project-heading {
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .announcements, .trending {
